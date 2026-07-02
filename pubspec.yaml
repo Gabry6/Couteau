@@ -1,0 +1,38 @@
+name: itla_toolbox_app
+description: "App multi-función para ITLA - Desarrollo de Aplicaciones Móviles"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  audioplayers: ^6.1.0
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+# ---------------------------------------------------------------
+# ICONO DE LA APP = tu foto.
+# 1) Coloca tu foto en: assets/icon/icon.png  (cuadrada, mín. 512x512)
+# 2) Corre:  flutter pub get
+#            flutter pub run flutter_launcher_icons
+# ---------------------------------------------------------------
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/icon.png
